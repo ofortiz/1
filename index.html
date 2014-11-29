@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Hotel App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="CSS/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+	
+    <div data-role="page" id="home">
+        <div data-role="header"><h1>Hotel App</h1> </div>
+	   <div role="main" class="ui-content">
+           <ul data-role="listview" data-inset="true" >               
+            <li><a href="#rn1">Nueva Reserva</a></li>
+            <li><a href="#hist">Historial</a></li>
+            <li><a href="#priv">Privacidad</a></li>            
+           </ul>
+        </div>
+	   <div data-role="footer" data-position="fixed">.             
+           <span style="font-size:8pt;">Todos los derechos reservados @copy;</span>
+           <a href="#nosotros" data-rol="button" data-transition="slideup"> Nosotros</a>
+        </div>
+    </div>
+    
+<! NOSOTROS>   
+        <div data-role="page" id="nosotros" >
+            <div data-role="header"> <h1>Nosotros</h1><a href="#" data-role="button" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right"> Atrás </a>
+        </div>
+        <div role="main" class="ui-content">
+            <p style="text-align: justify;"> PhoneGap es un framework para el desarrollo de aplicaciones móviles basado en estándares como JavaScript, HTML5 y CSS3. Las aplicaciones que se obtienen como resultado son híbridas, es decir a medias entre una webapp y una aplicación nativa, usamos el móvil para encapsular en un WebView nuestro proyecto web. PhoneGap además permite el uso de características propias como el acelerómetro, GPS, cámara, almacenamiento o notificaciones. Otra de las características de PhoneGap es que está basado en Apache Cordova plataforma de software de código abierto lo que nos permite utilizarlo sin necesidad de licencia de ningún tipo. </p>
+        </div>        
+    </div>
+    
+<! PRIVACIDAD>
+    <div data-role="page" id="priv" >
+            <div data-role="header"> <h1>Privacidad</h1><a href="#" data-role="button" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-btn-right"> Atrás </a>
+        </div>
+        <div role="main" class="ui-content">
+            <p style="text-align: justify;"> PhoneGap es un framework para el desarrollo de aplicaciones móviles basado en estándares como JavaScript, HTML5 y CSS3. Las aplicaciones que se obtienen como resultado son híbridas, es decir a medias entre una webapp y una aplicación nativa, usamos el móvil para encapsular en un WebView nuestro proyecto web. PhoneGap además permite el uso de características propias como el acelerómetro, GPS, cámara, almacenamiento o notificaciones. Otra de las características de PhoneGap es que está basado en Apache Cordova plataforma de software de código abierto lo que nos permite utilizarlo sin necesidad de licencia de ningún tipo. </p>
+        </div>        
+    </div>
+    
+<! HISTORIAL>
+    
+    <div data-role="page" id="hist" >
+            <div data-role="header"> <h1>Historial</h1><a href="#" data-role="button" data-rel="back" > Atrás </a>
+        </div>
+        <div role="main" class="ui-content">            
+        </div>        
+    </div>
+    
+<!OTRA PAGES rn1>
+    <div data-role="page" id="rn1">
+	<div data-role="header"> <h1>Reservar</h1></div>
+	<div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li data-role="list-divider">Tipo de habitación</li>
+            <li ><a href="#">Sencilla</a></li>
+            <li><a href="#">Doble</a></li>
+            <li><a href="#">Triple</a></li>
+        </ul>
+        
+    </div>
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#" class="ui-btn-active">Siguiente</a></li>
+            <li><a href="#" data-rel="back">Cancelar</a></li>
+        </ul>
+        </div><!-- /navbar -->        
+    </div>
+    </div>
+    
+<!OTRA PAGES rn2>    
+    <div data-role="page" id="rn2">
+	<div data-role="header"> <h1>Reservar</h1></div>
+	<div role="main" class="ui-content">
+        <ul data-role="listview">
+            <li data-role="list-divider">Datos Extras</li>
+            <li>Personas: <select id="resP"> <option>1</option> <option>2</option><option>3</option><option>4</option><option>5</option></select>  </li>
+            <li>  </li>
+            <li>  </li>
+            
+        </ul>
+        
+    </div>
+	<div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+        <ul>
+            <li><a href="#" class="ui-btn-active">Enviar</a></li>
+            <li><a href="#" data-rel="back">Cancelar</a></li>
+        </ul>
+        </div><!-- /navbar -->        
+    </div>
+</div>
+</body>
+</html>
